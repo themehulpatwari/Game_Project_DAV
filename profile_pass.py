@@ -15,7 +15,7 @@ def username_pass_check(username_dict):
       print('Invalid Username')
 
 def profile_pass_main():
-   con = sqltor.connect(host = 'localhost', user = 'root', passwd = 'ganeshji', database = 'game_data')
+   con = sqltor.connect(host = 'localhost', user = 'root', passwd = '', database = 'game_data')
    cur = con.cursor()
    query="SELECT * FROM login_data"
    cur.execute(query)

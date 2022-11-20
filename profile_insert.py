@@ -36,7 +36,7 @@ def name_pass(username_list):
    return (username, password)
 
 def profile_insert_main():
-   connection = sqltor.connect(host = 'localhost', user = 'root', passwd = 'ganeshji', database = 'game_data')
+   connection = sqltor.connect(host = 'localhost', user = 'root', passwd = '', database = 'game_data')
    cur = connection.cursor()
    query="SELECT * FROM login_data"
    cur.execute(query)
